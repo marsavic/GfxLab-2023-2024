@@ -1,6 +1,7 @@
 package xyz.marsavic.gfxlab.graphics3d;
 
 import xyz.marsavic.gfxlab.Color;
+import xyz.marsavic.gfxlab.graphics3d.solids.Nothing;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -19,7 +20,7 @@ public interface Scene {
 	
 	class Base implements Scene {
 		
-		protected Solid solid;
+		protected Solid solid = Nothing.INSTANCE;
 		protected final List<Light> lights = new ArrayList<>();
 		protected Color colorBackground = Color.BLACK;
 		

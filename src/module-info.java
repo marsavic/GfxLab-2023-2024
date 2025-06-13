@@ -12,7 +12,5 @@ open module xyz.marsavic.GfxLab {
 	requires org.kordamp.ikonli.core;
 	requires org.kordamp.ikonli.materialdesign2;
 	requires org.kordamp.ikonli.javafx;
-	
-	requires com.github.benmanes.caffeine;
-	
+
 }
